@@ -134,6 +134,10 @@ nav a {
 	display: flex;
 	flex-direction: row;
 }
+.column-left, .column-center, .column-right {
+	width: 32.3%;
+	padding: 3px;
+}
 
 .copyright {
 	text-align: center;
