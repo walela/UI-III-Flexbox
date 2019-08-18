@@ -63,15 +63,12 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-body {
-	width: 960px;
-	margin: 0 auto;
-	padding: 10px 20px;
-}
 .wrapper {
-	display: flex;
-	flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 header {
 	display: flex;
@@ -89,56 +86,64 @@ nav a {
 	color: grey;
 	padding: 20px;
 }
-.subheader {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items:flex-start;
-	align-content: space-between;
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.prompt {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+.left, .right {
+    flex-basis: 45%;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: lightgray;
+    margin: 5px;
+    padding: 10px;
 
 }
-.prompt h1 {
-	font-size: 4.5em;
-	text-align: center;
-	padding: 40px;
-	padding-bottom: 20px;
+.learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: white;
+    width: 100px;
+    height: 30px;
 }
-.prompt a {
-	text-decoration: none;
-	color: black;
-	border: 1px solid black;
-	width: 173px;
-	height: 35px;
-	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
+.learn-more a {
+    text-decoration: none;
+    color: black;
 }
-.content {
-	display: flex;
-	flex-direction: column;
-	line-height: 1.1em;
-	text-align: left;
+li {
+    list-style-type: square;
+    margin: 6px;
 }
-
-.section-1 {
-	display: flex;
-	flex-direction: row;
+.copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
 }
-.section-3 {
-	display: flex;
-	flex-direction: row;
+.services-info {
+    flex-basis: 45%;
+    margin-bottom: 10px;
+    line-height: 1.2em;
 }
-.column-left, .column-center, .column-right {
-	width: 32.3%;
-	padding: 3px;
+.services-info-img {
+    width: 45%;
+    height: 40%;
+    margin-top: -36px;
+}
+hr {
+    border: 1px solid black;
 }
 
 .copyright {
-	text-align: center;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
 }
